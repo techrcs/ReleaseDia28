@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Dia 28</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>Te amo mil milhões!</h2>
+										</header>
+										<p>Oii xuxuzinho, só queria dizer que te amo muito muito mesmo, e desejar para nós mais um ano de namoro, já chegamos aos 5 eim!?<br>Esse ano curtimos muuuito, e cada vez mais quero estar sempre ao seu lado, seja em alguma festinha duvidosa, ou em casa vendo aquele Netflix! Te amo 3000!!</p>
+									</div>
+									<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<p>Mais de</p>
+								</header>
+								<ul class="statistics">
+									<li class="style2">
+										<span class="icon"></span>
+										<strong><div id="hoursDiv">...</div></strong> horas
+									</li>
+									<li class="style3">
+										<span class="icon"></span>
+										<strong><div id="minutesDiv">...</div></strong> minutos
+									</li>
+									<li class="style4">
+										<span class="icon"></span>
+										<strong><div id="secondsDiv">...</div></strong> segundos
+									</li>
+								</ul>
+								<header class="major">
+									te amando muito muito muito!
+								</header>
+							</section>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<iframe width="320" height="180" src="https://www.youtube.com/embed/kdo28GoCuh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; TechRCS. Developed with &#10084; by Ronaldo Cesar.</p>
+					</footer>
+
+			</div>
+
+			<script>
+
+				var countDate = new Date("Dec 28, 2017 00:00:01").getTime();
+	
+				var _second = 1000;
+				var _minute = _second * 60;
+				var _hour = _minute * 60;
+
+				var myfunc = setInterval(function() {
+					var now = new Date().getTime();
+					var timecounter = now - countDate;
+					
+					var hour = Math.floor(timecounter / _hour);
+					var minutes = Math.floor((timecounter % _hour) / _minute);
+        			var seconds = Math.floor((timecounter % _minute) / _second);
+
+					document.getElementById("hoursDiv").innerHTML = hour;
+					document.getElementById("minutesDiv").innerHTML = minutes;
+					document.getElementById("secondsDiv").innerHTML = seconds;
+	
+				}, 1000)
+	
+			</script>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
